@@ -37,12 +37,12 @@
             };
         ?>
 
-            <?php foreach(filterByReleaseDate($games,'2000') as $game): ?>
-                <li>
-                    <ul>
+            <?php foreach(filterByReleaseDate($games,'2019') as $game): ?>
+                <ul>
+                    <li>
                         <?= $game['name'] .' '. $game['releaseDate'] ?>
-                    </ul>
-                </li>
+                    </li>
+                </ul>
             <?php endforeach; ?>
     </body>
 </html>
