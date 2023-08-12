@@ -28,7 +28,7 @@
                 ],
             ];
             function filter($items , $fn) {
-                $filteredItems[];
+                $filteredItems = [];
                 foreach($items as $item) {
                     if ($fn($item)) {
                         $filteredItems[] = $item;
