@@ -27,18 +27,23 @@
                     'purchaseLink' => 'http://Control.com',
                 ],
             ];
-            function filterByReleaseDate($games , $releaseDate) {
-                foreach($games as $game) {
-                    if ($game['releaseDate'] === $releaseDate) {
-                        $filteredGames[] = $game;
+            function filter($items , $fn) {
+                $filteredItems[];
+                foreach($items as $item) {
+                    if ($fn($item)) {
+                        $filteredItems[] = $item;
                     };
                 };
-                return $filteredGames;
+                return $filteredItems;
             };
+        
+            $filteredGames = filter ($games , function ($game) {
+                return $game['rating'] >= 9;
+            });
         ?>
 
             <h2>
-                <?php foreach(filterByReleaseDate($games,'2019') as $game): ?>
+                <?php foreach($filteredGames as $game): ?>
                     <ul>
                         <li>
                             <?= $game['name'] . ' ' . $game['releaseDate'] ?>
