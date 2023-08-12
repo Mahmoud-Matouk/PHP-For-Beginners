@@ -38,7 +38,7 @@
             };
         
             $filteredGames = filter ($games , function ($game) {
-                return $game['rating'] >= 9;
+                return $game['rating'] <= 10;
             });
         ?>
 
@@ -46,7 +46,7 @@
                 <?php foreach($filteredGames as $game): ?>
                     <ul>
                         <li>
-                            <?= $game['name'] . ' ' . $game['releaseDate'] ?>
+                            <?= $game['name'] . ' - ' . $game['rating'] ?>
                         </li>
                     </ul>
                 <?php endforeach; ?>
