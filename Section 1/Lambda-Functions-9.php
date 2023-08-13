@@ -50,7 +50,7 @@
                 <?php foreach($filteredGames as $game): ?>
                     <ul>
                         <li>
-                            <?= $game['name'] . ' - ' . $game['rating'] ?>
+                            <a href="<?php $game['purchaseLink']?>"> <?= $game['name'] . ' - ' . $game['rating'] ?> </a>
                         </li>
                     </ul>
                 <?php endforeach; ?>
