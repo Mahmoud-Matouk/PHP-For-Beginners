@@ -42,7 +42,7 @@
         
             //? in this case we can use array_***** instead of creating a function that passes across the array
                 $filteredGames = array_filter ($games , function ($game) {
-                    return $game['rating'] <= 10;
+                    return $game['releaseDate'] >= 1950 && $game['releaseDate'] <= 2020;
                 });
             ?>
 
