@@ -2,7 +2,7 @@
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
-    "/Section-2/15-Make-a-PHP-Router/index.php" => '/controllers/index.php',
+    "/index.php" => '/controllers/index.php',
     "/contact"   => '/controllers/contact.php',
     "/about"     => '/controllers/about.php',
     "/rating"    => '/controllers/rating.php',
