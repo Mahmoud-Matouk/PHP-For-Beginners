@@ -1,3 +1,3 @@
 <?php
 $heading = "Home";
-require "../views/index.view.php";
+require __DIR__ . '\index.view.php';
