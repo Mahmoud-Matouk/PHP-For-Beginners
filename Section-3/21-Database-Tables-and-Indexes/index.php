@@ -4,5 +4,8 @@ require "Database.php";
 
     $config = require("config.php");
     $db = new Database($config['dataBase']);
-    $search = $db->query("SELECT * FROM php ")->fetchAll();
+
+    $id = $_GET['id'];
+    $query = "SELECT * FROM php WHERE id = id";
+    $search = $db->query($query, [":id" => $id])->fetch();
     dd($search);
