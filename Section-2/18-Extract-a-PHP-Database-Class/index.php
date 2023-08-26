@@ -2,6 +2,8 @@
 require "functions.php";
 require "Database.php";
 
-    $db = new Database();
-    $search = $db->query("SELECT * FROM name")->fetchAll(PDO::FETCH_ASSOC);
+    $config = require("config.php");
+
+    $db = new Database($config['dataBase']);
+    $search = $db->query("SELECT * FROM name")->fetchAll();
     dd($search);

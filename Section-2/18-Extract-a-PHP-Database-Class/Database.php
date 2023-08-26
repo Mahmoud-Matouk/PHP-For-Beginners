@@ -1,16 +1,12 @@
 <?php
 class DataBase {
     public $connection;
-    public function __construct() {
-        $host     = 'localhost';
-        $username = 'root';
-        $password = '';
-        $port     = 3306;
-        $dbname   = 'muc';
-    
-        $dsn = "mysql: host=$host; user=$username; ;password=$password port=$port; dbname=$dbname; charset=utf8mb4";
+    public function __construct($config , $username = 'root' , $password = null) {
+        $dsn = 'mysql:' . http_build_query($config,'',';');
 
-        $this->connection = new PDO($dsn);
+        $this->connection = new PDO($dsn , $username, $password , [
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]);
     }
     public function query($query) {
         $statement = $this->connection->prepare($query);
