@@ -1,3 +1,3 @@
 <?php
 $heading = "Rating";
-require "../views/rating.view.php";
+require __DIR__ . '/../views/rating.view.php';
