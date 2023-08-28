@@ -3,12 +3,12 @@
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
-    "/working/Section-3/22-Render-the-Notes-and-Note-Page/"        => './controllers/index.php',
-    "/working/Section-3/22-Render-the-Notes-and-Note-Page/about"   => './controllers/about.php',
-    "/working/Section-3/22-Render-the-Notes-and-Note-Page/notes"   => './controllers/notes.php',
-    "/working/Section-3/22-Render-the-Notes-and-Note-Page/note"    => './controllers/note.php',
-    "/working/Section-3/22-Render-the-Notes-and-Note-Page/contact" => './controllers/contact.php',
-    "/working/Section-3/22-Render-the-Notes-and-Note-Page/rating"  => './controllers/rating.php',
+    "/working/Section-3/23-Introduction-to-Authorization/"        => './controllers/index.php',
+    "/working/Section-3/23-Introduction-to-Authorization/about"   => './controllers/about.php',
+    "/working/Section-3/23-Introduction-to-Authorization/notes"   => './controllers/notes.php',
+    "/working/Section-3/23-Introduction-to-Authorization/note"    => './controllers/note.php',
+    "/working/Section-3/23-Introduction-to-Authorization/contact" => './controllers/contact.php',
+    "/working/Section-3/23-Introduction-to-Authorization/rating"  => './controllers/rating.php',
 ];
 
 function routeToController($uri, $routes){
