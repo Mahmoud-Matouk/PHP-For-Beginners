@@ -3,8 +3,7 @@
 <?php require "partials/header.php"; ?>
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <p>Welcome To Home Page</p>
+        <p>Welcome To Contact Us Page</p>
     </div>
 </main>
 <?php require "partials/footer.php"; ?>
-<?php require "/system/xampp/htdocs/working/Section-3/24-Programming-is-Rewriting/router.php"; ?>
