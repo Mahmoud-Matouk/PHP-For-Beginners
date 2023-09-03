@@ -1,8 +1,8 @@
 <?php
 
-require '../Validator.php';
+require '../../Validator.php';
 
-$config = require '../config.php';
+$config = require '../../config.php';
 $db = new DataBase($config['dataBase']);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -21,5 +21,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     };
 };
 
-require './../functions.php';
-require 'views/note-create.view.php';
+require '../../functions.php';
+require '../views/notes/create.view.php';
