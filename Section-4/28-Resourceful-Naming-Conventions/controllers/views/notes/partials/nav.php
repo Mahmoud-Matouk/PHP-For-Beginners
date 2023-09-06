@@ -8,11 +8,11 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="/working/Section-4/29-Resourceful-Naming-Conventions"                         class = "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page"> Home </a>
-                        <a href="/working/Section-4/29-Resourceful-Naming-Conventions/controllers/about.php"   class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> About Us </a>
-                        <a href="/working/Section-4/29-Resourceful-Naming-Conventions/controllers/notes/index.php"   class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Notes </a>
-                        <a href="/working/Section-4/29-Resourceful-Naming-Conventions/controllers/contact.php" class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Contact </a>
-                        <a href="/working/Section-4/29-Resourceful-Naming-Conventions/controllers/rating.php"  class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Rating </a>
+                        <a href="/working/Section-4/28-Resourceful-Naming-Conventions"                         class = "bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page"> Home </a>
+                        <a href="/working/Section-4/28-Resourceful-Naming-Conventions/controllers/about.php"   class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> About Us </a>
+                        <a href="/working/Section-4/28-Resourceful-Naming-Conventions/controllers/notes/index.php"   class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Notes </a>
+                        <a href="/working/Section-4/28-Resourceful-Naming-Conventions/controllers/contact.php" class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Contact </a>
+                        <a href="/working/Section-4/28-Resourceful-Naming-Conventions/controllers/rating.php"  class = "text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Rating </a>
                     </div>
                 </div>
             </div>
