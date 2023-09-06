@@ -1,4 +1,9 @@
 <?php
+const BASE_PATH = __DIR__ . '/../../';
+require BASE_PATH . 'Core/functions.php';
+
+use Core\Database;
+use Core\Validator;
 
 $config = require base_path('config.php');
 $db = new Database($config['database']);
